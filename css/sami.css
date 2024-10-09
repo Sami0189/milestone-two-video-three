@@ -1,0 +1,52 @@
+/* work sence font foum google */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Work Sans", sans-serif;
+}
+/* header tags */
+header{
+    background: rgba(255, 144, 14, 0.1);
+    padding: 50px 240px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+nav, ul{
+    display: flex;
+}
+nav, li{
+    list-style: none;
+    margin-right:30px ;
+    font-weight: 500;
+    font-size: 1rem;
+    color: rgb(66, 66, 66);
+}
+.nav-title{
+    color: rgb(19, 19, 19);
+font-size: 3rem;
+font-weight: 700;
+}
+
+.banner-content{
+    max-width: 800px;
+    text-align: center;
+    border: 4px solid red;
+    margin: 50px auto;
+}
+.banner-title{
+    color: rgb(19, 19, 19);
+    font-size: 3rem;
+    font-weight: 700;
+   
+}
+.banner-description{
+    color: rgb(19, 19, 19);
+    font-size: 1rem;
+    font-weight: 700;
+}
+.btn{
+
+}
