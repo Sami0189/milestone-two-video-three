@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @keyframes ping-pong {
+        from {
+          left: 0;
+        }
+        to {
+          left: 400px;
+          background-color: rgb(131, 241, 4);
+        }
+      }
+      @keyframes sami {
+        0% {
+          top: 0%;
+          left: 0%;
+          background-color: aliceblue;
+        }
+        25% {
+          left: 150px;
+          top: 200px;
+          background-color: rgb(0, 136, 255);
+        }
+        50% {
+          left: 300px;
+          top: 0;
+          background-color: rgb(0, 255, 0);
+        }
+
+        100% {
+          left: 400px;
+          top: 200px;
+          background-color: rgb(255, 0, 0);
+        }
+      }
+      .stage {
+        width: 600px;
+        height: 300px;
+        border: 3px solid red;
+        background-color: aqua;
+      }
+      .ball {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: gold;
+        position: relative;
+        /* animation: ping-pong 2s ease-in-out 1s 3 alternate; */
+        animation: sami 2s ease-in-out 1s infinite alternate;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Explore animation</h3>
+    <div class="stage">
+      <div class="ball"></div>
+    </div>
+  </body>
+</html>

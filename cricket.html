@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .field{
+            border: solid red;
+        }
+        .field:hover .bat{
+            transform: rotate(-60deg);
+            transform-origin: top right;
+        }
+        .field:hover .ball{
+            transform: translate(1000px, -500px) ;
+        }
+        .ball{
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            border-radius: 50%;
+            position: relative;
+            left: 190px;
+            transition: transform 1s 1.5s;
+        }
+        .bat{
+            transition:transform 2s;
+        }
+    </style>
+</head>
+<body>
+    <div class="field">
+        <img class="bat" src="images/team2.png" alt="">
+        <img class="ball" src="images/team4.png" alt="">
+
+    </div>
+</body>
+</html>
